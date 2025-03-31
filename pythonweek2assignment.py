@@ -19,7 +19,9 @@ my_list.pop()
 # instruction 6 Sort the list in ascending order
 my_list.sort()
 
+
 #instruction 7 Find and print the index of value 30
 index_30 = my_list.index(30)
 print("Index of 30:", index_30)
+print(my_list)
 
