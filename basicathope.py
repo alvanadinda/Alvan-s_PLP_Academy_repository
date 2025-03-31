@@ -1,8 +1,6 @@
 a = 2
 b = 7
 
-
-
 a += b # a= a+b
 a -= b # a= a-b
 
@@ -20,7 +18,6 @@ a == b #cannot be seen since there is no print statement
 print(a==b) # equal to operator  it is seen since there is a print statement
 
 print((a > 2) and (b >= 10) )# and operator
-
 
 x = "hello world"
 y = {1:'a', 2:'b'}
@@ -88,14 +85,46 @@ print(list_a) #poping works with index
 del list_a[7]
 print(list_a) # delete the element at index 7 from the list which is 10
 
+list_a.remove(18) # remove the element 10 from the list  languages.remove("Python") # remove the element "Python" from the list
 for item in list_a:
-
+#for loop it is
 	#print(item, end=' ') # print the elements of the list separated by space.... i dont elewa this
 
-	print(item) #arranges the items downwards
-
+	print(item) #arranges the items downwards due for loop
+numbers = [numbers*numbers for numbers in range(1, 11)] # list comprehension
+print(numbers) # list comprehension
 #a list can have strings, numbers, lists, dictionaries, tuples, sets etc as elements
 
 capital_cities = {"Nepal": "Kathmandu", "India": "New Delhi", "USA": "Washington D.C."}
 print(capital_cities["Nepal"]) # access the value of the key "Nepal"
 print(capital_cities.keys()) # access the value of the key "India"
+
+#a set doesnt accept duplication,a set is mutable,in sets there is 
+# no indexing hence the elements come in different order when they are printed
+# a set is unordered, unindexed, and unchangeable
+empty_set = set() # create an empty 
+
+print(empty_set) # print the empty set
+empty_set.add(1) # add an element to the set
+print(empty_set) # print the set
+
+empty_dictionary ={}#creates an an empty dictionary
+print(empty_dictionary) # print the empty dictionary
+
+numbers2 = {1, 2, 3, 4, 5} # create a set with elements 1, 2, 3, 4, 5
+print("Initial set:",numbers2) # print the set
+numbers2.add(6) # add an element to the set
+print("updated set:",numbers2) # print the 
+
+companies = {"Lacoste", "Ralph Lauren"}
+
+tech_companies = ["apple", "google", "apple"]
+companies.update(tech_companies)
+print(companies)
+companies.discard("apple")
+print(companies)
+for company in companies:
+	print(company) # print the elements of the set separated by space
+print(len(companies)) # print the length of the set which  is 3 in this case
+print("apple" in companies) # check if "apple" is in the set
+

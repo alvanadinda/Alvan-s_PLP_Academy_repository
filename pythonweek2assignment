@@ -1,0 +1,9 @@
+# instrucion 1 Creating an empty list
+my_list = []
+
+#instrucion 2 Appending the 4 elements in the list
+my_list.append(10)
+my_list.append(20)
+my_list.append(30)
+my_list.append(40)
+
